@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  input[type='text'],input[type='button'] {
+  --focus: 2px rgba(39, 94, 254, .25);
+  outline: blue;
+  transition: box-shadow .2s;
+}
+      .contain{
+      border:5px solid black;
+      padding:5px;
+      margin:0px;
+    }
+        body{
+      padding: 0px;
+      margin:0px;
+      background-color: #DCF2F1;;
+    }
+    .second a{
+      color:whitesmoke;
+      text-decoration: none;
+    }
+    h1{
+      margin:0px;
+    }
+        .grid {
+      margin-top:0px;
+      display: grid;
+      grid-template-columns: 0.20fr 0.80fr;
+      grid-template-rows: 35px 550px 50px;
+      gap: 10px;
+    }
+        .first{
+      height:70px;
+      border-radius:10px 10px 0px 0px;
+      background-color: #0F1035;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .second{
+      border-radius:0px 0px 10px 10px;
+      background-color: rgb(54, 84, 134);
+      display:inline-block;
+      padding:4px 200px 2px 475px;
+      grid-column: span 2;
+    }
+    .one,.two,.three,.four{
+      display: inline;
+    }
+    .one,.two,.three{
+      margin-right:75px;
+    }.fourth{
+        border-radius: 10px;
+      background-color: rgb(127, 199, 217);
+      text-align: center;
+      padding: 5px;
+    }
+    .sixth{
+      border-radius: 10px;
+      background-color: rgb(54, 84, 134);
+      color:aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: span 2;
+    }
+    .contact,.email{
+      margin-right: 30px;
+    }
+    .input{
+      color: aqua;
+    }
+    .fourth>h1{
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .fourth1{
+      display: flex;
+      justify-content: center;
+    }
+    .budget,.spent,.left{
+      display: inline-block;
+      background-color: antiquewhite;
+      height:200px;
+      width:200px;
+      margin-right: 100px;
+      border-radius:50%;
+    }
+    .a1,.a2,.a3{
+      margin-right:95px;
+      margin-top:40px;
+      font-size: x-large;
+    }
+    .budget{
+      background-image: url(amount.jpg);
+        background-size:contain;
+        background-position: center;
+        border: 2px solid black;
+    }
+    .spent{
+      background-image: url(th.jpg);
+        background-size:contain;
+        background-position: center;
+        border: 2px solid black;
+    }
+    .left{
+      background-image: url(left.jpg);
+        background-size:contain;
+        background-position: center;
+        border: 2px solid black;
+    }
+    .third{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:0.5fr 0.5fr;
+      gap:10px;
+    }
+    .third1,.third2{
+      background-color: rgb(127, 199, 217);
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:0.3fr 0.2fr 0.2fr 0.2fr;
+      
+    }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="first card"><h1>PENNYWISE</h1></div>
+    <div class="grid">
+        <div class="second card">
+            <div class="one"><a href="index.html">HOME</a></div>
+            <div class="two"><a href="dashboard.html">DASHBOARD</a></div>
+            <div class="three"><a href="budget.html">NEW BUDGET</a></div>
+            <div class="four"><a href="signin.html">SIGN IN</a></div>
+          </div>
+          <div class="third">
+           <div class="third1">
+            <h1><u>Create new expense</u></h1>
+            <input type="number" placeholder="Enter amount of expense">
+            <input type="text" placeholder="Enter the name of expense">
+            <input type="button" value="submit">
+           </div>
+           <div class="third2">
+            <h1><u>Create new budget</u></h1>
+            <input type="number" placeholder="Enter amount of budget">
+            <input type="text" placeholder="Enter the name of budget">
+            <input type="button" value="submit">
+           </div>
+          </div>
+          <div class="fourth">
+            <h1><u><b>CURRENT BUDGET</b></u></h1>
+            <div class="fourth1">
+                <div>
+                  <div class="budget"></div>
+                <div class="a1"><p>Amount alloted: 99$
+                </p></div>
+                </div>
+              
+                <div>
+                <div class="spent"></div>
+                <div class="a2">Amount spent: 50$</div>
+              </div>
+            
+                <div>
+                  <div class="left"></div>
+                <div class="a3">Amount left: 30$</div>
+                </div>
+            
+            </div>
+          </div>
+          <div class="sixth">
+            <div class="contact"><h4>CONTACT US --------        </h4></div>
+        <div class="email"><p><b>Email:</b> info@pennywise.com     </p></div>
+        <div class="phone"><p><b>Phone:</b> 7268934567              </p></div> 
+          </div>
+    </div>
+    </div>
+</body>
+</html>
